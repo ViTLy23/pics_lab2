@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-md-6">
+                <div id="encrypt-block">
+                    <h3>Введіть текст:</h3>
+                    <textarea name="user-text" id="text-to-work" cols="40" rows="3"></textarea><br><br>
+                    <div class="form-group">
+                        <button class="btn-primary" id="encrypt-btn">Зашифрувати</button>
+                        <button class="btn-primary" id="decrypt-btn">Розшифрувати</button>
+                        <button class="btn-danger" id="reset-btn">Очистити</button>
+                    </div>
+                    <h4>Ключ шифрування:</h4>
+                    <textarea name="key" id="key-to-work" cols="40" rows="3"></textarea>
+                    <h3>Результат:</h3>
+                    <textarea readonly id="output" cols="40" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
